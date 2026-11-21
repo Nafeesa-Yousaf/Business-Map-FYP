@@ -4,14 +4,13 @@
 
 > Final Year Project · BS Software Engineering · National University of Modern Languages (NUML), Islamabad · May 2026
 
-**[▶ Watch the demo video](https://drive.google.com/file/d/1bE6kQEjcVZhLTPX8QYMGth7AI5FKdMHf/view)**
+**[▶ Watch the demo video](https://drive.google.com/file/d/1bE6kQEjcVZhLTPX8QYMGth7AI5FKdMHf/view)** · **[📄 FYP report (PDF)](docs/Business%20Map%20-%20FYP%20Report.pdf)**
 
 | | |
 |---|---|
 | **Team** | Nafeesa Yousaf · Eman Tariq · Nayab Hameed |
-| **Supervisor** | Ms. Iqra Shahzad |
 | **Platform** | Android (Flutter) + FastAPI backend |
-| **Focus** | Islamabad SMEs / early-stage founders |
+| **Focus** | SMEs / early-stage founders |
 
 ---
 
@@ -80,9 +79,11 @@ for profiles and saved items.
 ```text
 ├── Business-Map-Backend/       # FastAPI AI + Places + OSM API
 ├── Business-Map-Flutter-App/   # Flutter Android client + Firebase
+├── docs/                      # FYP report
 └── README.md
 ```
 
+- [FYP report (PDF)](docs/Business%20Map%20-%20FYP%20Report.pdf)
 - [Backend setup & API docs](Business-Map-Backend/README.md)
 - [Flutter app setup](Business-Map-Flutter-App/README.md)
 
