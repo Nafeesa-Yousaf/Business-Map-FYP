@@ -1,0 +1,60 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+**/.env
+!**/.env.example
+secrets/
+**/secrets/
+*.pem
+*.p12
+*serviceAccount*.json
+*firebase*credentials*.json
+*-firebase-adminsdk-*.json
+**/google-services.json
+!**/google-services.json.example
+**/Keys.xcconfig
+!**/Keys.xcconfig.example
+keystore.properties
+**/*.keystore
+**/*.jks
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/venv/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.coverage
+**/htmlcov/
+**/*.egg-info/
+
+# Flutter / Dart / Android / iOS
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/build/
+**/android/local.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/ios/Flutter/.last_build_id
+**/*.symbols
+**/*.map.json
+
+# Logs
+*.log
+*.hprof

@@ -1,0 +1,6 @@
+{
+  "min_limit": 500000,
+  "max_limit": 50000000,
+  "interval": 500000,
+  "currency": "PKR"
+}

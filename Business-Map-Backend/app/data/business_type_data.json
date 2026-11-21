@@ -1,0 +1,462 @@
+[
+  {
+    "id": "food_and_beverage",
+    "name": "Food & Beverage",
+    "sub_types": [
+      {
+        "id": "desi_restaurant",
+        "name": "Desi / Pakistani Restaurant",
+        "search_keywords": "pakistani restaurant OR desi food OR biryani",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "cafe_chai_dhaba",
+        "name": "Cafe & Modern Chai Dhaba",
+        "search_keywords": "cafe OR tea OR coffee shop",
+        "ar_config": {
+          "external_url": "ar_models/food_and_beverage/cafe_ext.glb",
+          "internal_url": "ar_models/food_and_beverage/cafe_intr.glb",
+          "is_unified": false
+        }
+      },
+      {
+        "id": "fast_food",
+        "name": "Fast Food & Burger Joint",
+        "search_keywords": "fast food OR burger OR pizza",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "bakery_sweets",
+        "name": "Bakery & Sweet Shop",
+        "search_keywords": "bakery OR sweets OR dessert",
+        "ar_config": {
+          "external_url": "ar_models/food_and_beverage/bakery_uni.glb",
+          "internal_url": null,
+          "is_unified": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "retail_fashion",
+    "name": "Retail & Fashion",
+    "sub_types": [
+      {
+        "id": "clothing_boutique",
+        "name": "Clothing Boutique",
+        "search_keywords": "clothing store OR boutique OR apparel",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "fabric_store",
+        "name": "Unstitched Fabric Store",
+        "search_keywords": "fabric store OR textile shop",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "footwear_store",
+        "name": "Footwear Store",
+        "search_keywords": "shoes OR footwear shop",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "jewelry_accessories",
+        "name": "Jewelry & Accessories",
+        "search_keywords": "jewelry OR accessories shop",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "information_technology",
+    "name": "Information Technology",
+    "sub_types": [
+      {
+        "id": "software_house",
+        "name": "Software Development Agency",
+        "search_keywords": "software company OR IT agency",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": "ar_models/information_technology/software_cowork_int.glb",
+          "is_unified": false
+        }
+      },
+      {
+        "id": "digital_marketing",
+        "name": "Digital Marketing Agency",
+        "search_keywords": "digital marketing OR seo agency",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "call_center_bpo",
+        "name": "Call Center / BPO",
+        "search_keywords": "call center OR bpo services",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "freelance_coworking",
+        "name": "Coworking Space",
+        "search_keywords": "coworking OR shared office",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": "ar_models/information_technology/software_cowork_int.glb",
+          "is_unified": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "real_estate_construction",
+    "name": "Real Estate & Construction",
+    "sub_types": [
+      {
+        "id": "real_estate_agency",
+        "name": "Real Estate Agency / Property Dealer",
+        "search_keywords": "real estate OR property dealer",
+        "ar_config": {
+          "external_url": "ar_models/real_estate_construction/real_estate_agency_ext.glb",
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "construction_contractor",
+        "name": "Construction Contractor",
+        "search_keywords": "construction OR builder",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "interior_design",
+        "name": "Interior Design Studio",
+        "search_keywords": "interior design OR decorator",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "architectural_firm",
+        "name": "Architectural Firm",
+        "search_keywords": "architect OR architecture firm",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "education_training",
+    "name": "Education & Training",
+    "sub_types": [
+      {
+        "id": "tuition_academy",
+        "name": "Tuition Academy",
+        "search_keywords": "academy OR tuition center OR coaching",
+        "ar_config": {
+          "external_url": "ar_models/education_training/tuition_academy_ext.glb",
+          "internal_url": "ar_models/education_training/tuition_academy_int.glb",
+          "is_unified": false
+        }
+      },
+      {
+        "id": "vocational_training",
+        "name": "Vocational / Technical Training",
+        "search_keywords": "technical institute OR training center",
+        "ar_config": {
+          "external_url": "ar_models/education_training/tuition_academy_ext.glb",
+          "internal_url": "ar_models/education_training/tech_train_int.glb",
+          "is_unified": false
+        }
+      },
+      {
+        "id": "montessori_preschool",
+        "name": "Montessori / Daycare",
+        "search_keywords": "preschool OR daycare OR montessori",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "language_institute",
+        "name": "Language Institute (IELTS/English)",
+        "search_keywords": "ielts OR english learning center",
+        "ar_config": {
+          "external_url": "ar_models/education_training/tuition_academy_ext.glb",
+          "internal_url": "ar_models/education_training/tuition_academy_int.glb",
+          "is_unified": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "health_wellness",
+    "name": "Health & Wellness",
+    "sub_types": [
+      {
+        "id": "private_clinic",
+        "name": "Private Medical Clinic",
+        "search_keywords": "clinic OR doctor",
+        "ar_config": {
+          "external_url": "ar_models/health_wellness/hospital_ext.glb",
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "pharmacy",
+        "name": "Pharmacy / Medical Store",
+        "search_keywords": "pharmacy OR medical store",
+        "ar_config": {
+          "external_url": "ar_models/health_wellness/pharmacy_ext.glb",
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "fitness_gym",
+        "name": "Gym & Fitness Center",
+        "search_keywords": "gym OR fitness center",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": "ar_models/health_wellness/gym_int.glb",
+          "is_unified": false
+        }
+      },
+      {
+        "id": "diagnostic_lab",
+        "name": "Diagnostic Laboratory",
+        "search_keywords": "diagnostic lab OR pathology",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "beauty_personal_care",
+    "name": "Beauty & Personal Care",
+    "sub_types": [
+      {
+        "id": "beauty_salon",
+        "name": "Beauty Salon / Parlor",
+        "search_keywords": "beauty salon OR parlor",
+        "ar_config": {
+          "external_url": "ar_models/beauty_personal_care/salon_uni.glb",
+          "internal_url": null,
+          "is_unified": true
+        }
+      },
+      {
+        "id": "mens_salon",
+        "name": "Men's Salon / Barber Shop",
+        "search_keywords": "barber OR mens salon",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "spa_wellness",
+        "name": "Spa & Wellness Center",
+        "search_keywords": "spa OR wellness center",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "cosmetics_retail",
+        "name": "Cosmetics Retailer",
+        "search_keywords": "cosmetics shop OR beauty products",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "automotive_services",
+    "name": "Automotive Services",
+    "sub_types": [
+      {
+        "id": "auto_workshop",
+        "name": "Auto Workshop / Mechanic",
+        "search_keywords": "car repair OR mechanic",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "auto_parts",
+        "name": "Auto Parts Store",
+        "search_keywords": "auto parts OR car accessories",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "car_wash_detailing",
+        "name": "Car Wash & Detailing",
+        "search_keywords": "car wash OR auto detailing",
+        "ar_config": {
+          "external_url": "ar_models/automotive_services/car_wash_ext.glb",
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "car_rental",
+        "name": "Rent a Car Service",
+        "search_keywords": "car rental OR rent a car",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "events_weddings",
+    "name": "Events & Weddings",
+    "sub_types": [
+      {
+        "id": "event_planner",
+        "name": "Wedding & Event Planner",
+        "search_keywords": "event planner OR wedding organizer",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "catering_service",
+        "name": "Catering Service",
+        "search_keywords": "catering",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "photography_studio",
+        "name": "Photography & Videography",
+        "search_keywords": "photographer OR photo studio",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "marquee_banquet",
+        "name": "Marquee / Banquet Hall",
+        "search_keywords": "event venue OR banquet hall",
+        "ar_config": {
+          "external_url": null,
+          "internal_url": null,
+          "is_unified": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "professional_consultancy",
+    "name": "Professional Consultancy",
+    "sub_types": [
+      {
+        "id": "tax_accounting",
+        "name": "Tax & Accounting Firm",
+        "search_keywords": "accounting OR tax consultant",
+        "ar_config": {
+          "external_url": "ar_models/real_estate_construction/real_estate_agency_ext.glb",
+          "internal_url": "ar_models/professional_consultancy/tax_accounting_int.glb",
+          "is_unified": false
+        }
+      },
+      {
+        "id": "travel_visa",
+        "name": "Travel & Visa Consultancy",
+        "search_keywords": "travel agency OR visa agent",
+        "ar_config": {
+          "external_url": "ar_models/real_estate_construction/real_estate_agency_ext.glb",
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "legal_services",
+        "name": "Law Firm / Legal Services",
+        "search_keywords": "lawyer OR law firm",
+        "ar_config": {
+          "external_url": "ar_models/real_estate_construction/real_estate_agency_ext.glb",
+          "internal_url": null,
+          "is_unified": false
+        }
+      },
+      {
+        "id": "hr_recruitment",
+        "name": "HR & Recruitment Agency",
+        "search_keywords": "recruitment agency OR hr consultant",
+        "ar_config": {
+          "external_url": "ar_models/real_estate_construction/real_estate_agency_ext.glb",
+          "internal_url": null,
+          "is_unified": false
+        }
+      }
+    ]
+  }
+]

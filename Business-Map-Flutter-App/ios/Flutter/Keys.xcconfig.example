@@ -1,0 +1,3 @@
+// Copy to Keys.xcconfig and set the same Maps key as in root `.env`.
+// Keys.xcconfig is gitignored.
+MAPS_API_KEY=

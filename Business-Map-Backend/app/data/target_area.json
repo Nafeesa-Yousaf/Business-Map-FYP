@@ -1,0 +1,702 @@
+[
+  {
+    "id": "isb_b17",
+    "city_id": "isb",
+    "name": "B 17",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.6903984,
+      "lng": 72.8286389
+    }
+  },
+  {
+    "id": "isb_d12",
+    "city_id": "isb",
+    "name": "D-12",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.7018078,
+      "lng": 72.9486249
+    }
+  },
+  {
+    "id": "isb_d17",
+    "city_id": "isb",
+    "name": "D 17",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.6571475,
+      "lng": 72.8546185
+    }
+  },
+  {
+    "id": "isb_e8",
+    "city_id": "isb",
+    "name": "E-8",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7218933,
+      "lng": 73.0349231
+    }
+  },
+  {
+    "id": "isb_e9",
+    "city_id": "isb",
+    "name": "E-9",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7155267,
+      "lng": 73.0200684
+    }
+  },
+  {
+    "id": "isb_e11",
+    "city_id": "isb",
+    "name": "E-11",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6951189,
+      "lng": 72.972418
+    }
+  },
+  {
+    "id": "isb_e16",
+    "city_id": "isb",
+    "name": "E 16",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.6523786,
+      "lng": 72.8830284
+    }
+  },
+  {
+    "id": "isb_f5",
+    "city_id": "isb",
+    "name": "F-5",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7322095,
+      "lng": 73.0887796
+    }
+  },
+  {
+    "id": "isb_f6",
+    "city_id": "isb",
+    "name": "F-6",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7286213,
+      "lng": 73.0735239
+    }
+  },
+  {
+    "id": "isb_f7",
+    "city_id": "isb",
+    "name": "F-7",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7204333,
+      "lng": 73.0561174
+    }
+  },
+  {
+    "id": "isb_f8",
+    "city_id": "isb",
+    "name": "F-8",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7115043,
+      "lng": 73.0396002
+    }
+  },
+  {
+    "id": "isb_f10",
+    "city_id": "isb",
+    "name": "F-10",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6918206,
+      "lng": 73.0066844
+    }
+  },
+  {
+    "id": "isb_f11",
+    "city_id": "isb",
+    "name": "F-11",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6843932,
+      "lng": 72.989544
+    }
+  },
+  {
+    "id": "isb_f17",
+    "city_id": "isb",
+    "name": "F-17",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6312813,
+      "lng": 72.8802819
+    }
+  },
+  {
+    "id": "isb_g4",
+    "city_id": "isb",
+    "name": "G-4",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.729898,
+      "lng": 73.1274206
+    }
+  },
+  {
+    "id": "isb_g5",
+    "city_id": "isb",
+    "name": "G-5",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7208069,
+      "lng": 73.0982644
+    }
+  },
+  {
+    "id": "isb_g6",
+    "city_id": "isb",
+    "name": "G-6",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7154283,
+      "lng": 73.0856414
+    }
+  },
+  {
+    "id": "isb_g7",
+    "city_id": "isb",
+    "name": "G-7",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7066035,
+      "lng": 73.0690179
+    }
+  },
+  {
+    "id": "isb_g8",
+    "city_id": "isb",
+    "name": "G-8",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6966781,
+      "lng": 73.0508972
+    }
+  },
+  {
+    "id": "isb_g9",
+    "city_id": "isb",
+    "name": "G-9",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6914356,
+      "lng": 73.0307196
+    }
+  },
+  {
+    "id": "isb_g10",
+    "city_id": "isb",
+    "name": "G-10",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6777223,
+      "lng": 73.0187007
+    }
+  },
+  {
+    "id": "isb_g11",
+    "city_id": "isb",
+    "name": "G-11",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6687238,
+      "lng": 72.9987376
+    }
+  },
+  {
+    "id": "isb_g13",
+    "city_id": "isb",
+    "name": "G-13",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6514525,
+      "lng": 72.9620722
+    }
+  },
+  {
+    "id": "isb_g15",
+    "city_id": "isb",
+    "name": "G-15",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6326284,
+      "lng": 72.9230238
+    }
+  },
+  {
+    "id": "isb_g16",
+    "city_id": "isb",
+    "name": "G-16",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.6263457,
+      "lng": 72.9146691
+    }
+  },
+  {
+    "id": "isb_h8",
+    "city_id": "isb",
+    "name": "H-8",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6803071,
+      "lng": 73.0620483
+    }
+  },
+  {
+    "id": "isb_h9",
+    "city_id": "isb",
+    "name": "H-9",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6727621,
+      "lng": 73.0443667
+    }
+  },
+  {
+    "id": "isb_h10",
+    "city_id": "isb",
+    "name": "H-10",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6625278,
+      "lng": 73.0254905
+    }
+  },
+  {
+    "id": "isb_h11",
+    "city_id": "isb",
+    "name": "H-11",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6543909,
+      "lng": 73.0091541
+    }
+  },
+  {
+    "id": "isb_h12",
+    "city_id": "isb",
+    "name": "H-12",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.643728,
+      "lng": 72.991979
+    }
+  },
+  {
+    "id": "isb_h13",
+    "city_id": "isb",
+    "name": "H-13",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6366772,
+      "lng": 72.9754502
+    }
+  },
+  {
+    "id": "isb_i8",
+    "city_id": "isb",
+    "name": "I-8",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6688574,
+      "lng": 73.07296
+    }
+  },
+  {
+    "id": "isb_i9",
+    "city_id": "isb",
+    "name": "I-9",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6596669,
+      "lng": 73.0543899
+    }
+  },
+  {
+    "id": "isb_i10",
+    "city_id": "isb",
+    "name": "I-10",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6482061,
+      "lng": 73.0369194
+    }
+  },
+  {
+    "id": "isb_i11",
+    "city_id": "isb",
+    "name": "I-11",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6406724,
+      "lng": 73.0206898
+    }
+  },
+  {
+    "id": "isb_i14",
+    "city_id": "isb",
+    "name": "I-14",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6116096,
+      "lng": 72.9674477
+    }
+  },
+  {
+    "id": "isb_i15",
+    "city_id": "isb",
+    "name": "I-15",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6015213,
+      "lng": 72.9520564
+    }
+  },
+  {
+    "id": "isb_i16",
+    "city_id": "isb",
+    "name": "I-16",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.5935779,
+      "lng": 72.9329436
+    }
+  },
+  {
+    "id": "isb_al_makka_city",
+    "city_id": "isb",
+    "name": "Al Makka City",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.5768844,
+      "lng": 73.2499158
+    }
+  },
+  {
+    "id": "isb_bahria_golf_city",
+    "city_id": "isb",
+    "name": "Bahria Golf City",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7853774,
+      "lng": 73.2793799
+    }
+  },
+  {
+    "id": "isb_chistiabad",
+    "city_id": "isb",
+    "name": "Chistiabad",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6208077,
+      "lng": 72.9732348
+    }
+  },
+  {
+    "id": "isb_dha_phase_2",
+    "city_id": "isb",
+    "name": "DHA Phase II",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.5306585,
+      "lng": 73.1570314
+    }
+  },
+  {
+    "id": "isb_diplomatic_enclave",
+    "city_id": "isb",
+    "name": "Diplomatic Enclave",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.7236061,
+      "lng": 73.1118305
+    }
+  },
+  {
+    "id": "isb_faisal_colony",
+    "city_id": "isb",
+    "name": "Faisal Colony",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6199955,
+      "lng": 72.9636668
+    }
+  },
+  {
+    "id": "isb_ghauri_town_1",
+    "city_id": "isb",
+    "name": "Ghauri Town Phase 1",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6230097,
+      "lng": 73.1249233
+    }
+  },
+  {
+    "id": "isb_ghauri_town_2",
+    "city_id": "isb",
+    "name": "Ghauri Town Phase 2",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6185248,
+      "lng": 73.1263395
+    }
+  },
+  {
+    "id": "isb_ghauri_town_3",
+    "city_id": "isb",
+    "name": "Ghauri Town Phase 3",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6159292,
+      "lng": 73.128876
+    }
+  },
+  {
+    "id": "isb_ghauri_town_4a",
+    "city_id": "isb",
+    "name": "Ghauri Town Phase 4-A",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6178496,
+      "lng": 73.1344603
+    }
+  },
+  {
+    "id": "isb_ghauri_town_4b",
+    "city_id": "isb",
+    "name": "Ghauri Town Phase 4-B",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6191758,
+      "lng": 73.1427698
+    }
+  },
+  {
+    "id": "isb_ghauri_town_5",
+    "city_id": "isb",
+    "name": "Ghauri Town Phase 5",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6118371,
+      "lng": 73.13129
+    }
+  },
+  {
+    "id": "isb_ghauri_town_5a",
+    "city_id": "isb",
+    "name": "Ghauri Town Phase 5-A",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6152803,
+      "lng": 73.1378989
+    }
+  },
+  {
+    "id": "isb_ghauri_town_5b",
+    "city_id": "isb",
+    "name": "Ghauri Town Phase 5-B",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6205695,
+      "lng": 73.1406884
+    }
+  },
+  {
+    "id": "isb_gulberg_green",
+    "city_id": "isb",
+    "name": "Gulberg Green",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6019273,
+      "lng": 73.1564021
+    }
+  },
+  {
+    "id": "isb_jhangi_sayedan",
+    "city_id": "isb",
+    "name": "Jhangi Sayedan",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6204227,
+      "lng": 72.9406077
+    }
+  },
+  {
+    "id": "isb_jinnah_garden",
+    "city_id": "isb",
+    "name": "Jinnah Garden",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.5680007,
+      "lng": 73.1748605
+    }
+  },
+  {
+    "id": "isb_khayaban_e_kashmir",
+    "city_id": "isb",
+    "name": "Khayaban-e-Kashmir",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.634747,
+      "lng": 72.9215813
+    }
+  },
+  {
+    "id": "isb_naval_anchorage",
+    "city_id": "isb",
+    "name": "Naval Anchorage",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.569581,
+      "lng": 73.1959189
+    }
+  },
+  {
+    "id": "isb_river_garden",
+    "city_id": "isb",
+    "name": "River Garden",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.5495883,
+      "lng": 73.1686188
+    }
+  },
+  {
+    "id": "isb_zone_1",
+    "city_id": "isb",
+    "name": "Zone 1",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6616459,
+      "lng": 72.9868673
+    }
+  },
+  {
+    "id": "isb_zone_2",
+    "city_id": "isb",
+    "name": "Zone 2",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.6449331,
+      "lng": 72.8906348
+    }
+  },
+  {
+    "id": "isb_zone_iv",
+    "city_id": "isb",
+    "name": "Zone IV",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.644741,
+      "lng": 73.1650142
+    }
+  },
+  {
+    "id": "isb_zone_v",
+    "city_id": "isb",
+    "name": "Zone V",
+    "type": "suburb",
+    "coordinates": {
+      "lat": 33.5410328,
+      "lng": 73.178169
+    }
+  },
+  {
+    "id": "isb_blue_area",
+    "city_id": "isb",
+    "name": "Blue Area",
+    "type": "town",
+    "coordinates": {
+      "lat": 33.7220531,
+      "lng": 73.0787936
+    }
+  },
+  {
+    "id": "isb_rawat",
+    "city_id": "isb",
+    "name": "Rawat",
+    "type": "town",
+    "coordinates": {
+      "lat": 33.4968449,
+      "lng": 73.1944282
+    }
+  },
+  {
+    "id": "isb_french_colony",
+    "city_id": "isb",
+    "name": "French Colony",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.7200819,
+      "lng": 73.0616415
+    }
+  },
+  {
+    "id": "isb_khayaban_f15_1",
+    "city_id": "isb",
+    "name": "Khayaban-e-Kashmir F-15/1",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.6370851,
+      "lng": 72.9176974
+    }
+  },
+  {
+    "id": "isb_paec_society",
+    "city_id": "isb",
+    "name": "PAEC Employees Housing Society",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.481735,
+      "lng": 73.2027794
+    }
+  },
+  {
+    "id": "isb_police_foundation",
+    "city_id": "isb",
+    "name": "Police Foundation Housing Society",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.473835,
+      "lng": 73.1990285
+    }
+  },
+  {
+    "id": "isb_sector_g_dha_phase_2",
+    "city_id": "isb",
+    "name": "Sector G, DHA Phase 2, Islamabad",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.53007,
+      "lng": 73.1736117
+    }
+  },
+  {
+    "id": "isb_soan_garden",
+    "city_id": "isb",
+    "name": "Soan Garden",
+    "type": "neighbourhood",
+    "coordinates": {
+      "lat": 33.562535,
+      "lng": 73.1534991
+    }
+  }
+]

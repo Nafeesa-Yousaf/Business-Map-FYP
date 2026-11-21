@@ -1,0 +1,16 @@
+# Runtime dependencies (pinned). Install with: pip install -r requirements.txt
+fastapi==0.118.0
+uvicorn[standard]==0.37.0
+pydantic==2.11.9
+pydantic-settings==2.14.0
+python-dotenv==1.1.1
+firebase_admin==7.1.0
+google-genai==1.68.0
+googlemaps==4.10.0
+shapely==2.1.2
+requests==2.32.5
+httpx==0.28.1
+
+# Dev / test
+pytest==8.4.2
+pytest-asyncio==1.2.0
