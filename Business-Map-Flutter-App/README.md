@@ -4,6 +4,11 @@ Android-first Flutter client for **Business Map**: location suggestions, competi
 
 Pairs with [`Business-Map-Backend`](../Business-Map-Backend/).
 
+### AR preview (two modes)
+
+1. **On the recommended site** — `ARFeatureScreen` loads a 3D `.glb` in a WebView map (`assets/ar_map.html`) and pins it at the suggestion’s real lat/lng.
+2. **In the real world** — location detail launches Google Scene Viewer (`ar_only`) so users can place exterior/interior layouts on a physical surface via ARCore.
+
 ## Prerequisites
 
 - Flutter SDK (Dart `^3.8.1` — see `pubspec.yaml`)

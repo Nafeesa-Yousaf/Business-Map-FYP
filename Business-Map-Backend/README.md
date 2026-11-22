@@ -41,7 +41,7 @@ This API powers the Flutter client: catalog data (cities, areas, business types,
 
 1. Focused Places search in each winner zone for **real commercial anchors**.
 2. Gemini picks the best building per zone (budget + business type constrained).
-3. Returns SWOT, coordinates, and media links suitable for AR overlay.
+3. Returns SWOT, coordinates, signed AR `.glb` URLs, and media links — so the Flutter client can pin a 3D model at the real recommended lat/lng and open Scene Viewer AR.
 
 Recommendations are grounded in Places results — not invented place names.
 

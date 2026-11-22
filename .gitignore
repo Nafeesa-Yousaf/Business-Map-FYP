@@ -58,3 +58,6 @@ keystore.properties
 # Logs
 *.log
 *.hprof
+
+# Local interview / masters prep (keep private)
+docs/Business_Map_Interview_Masters_Prep.docx

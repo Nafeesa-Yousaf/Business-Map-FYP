@@ -17,9 +17,9 @@
 
 ## Why this project exists
 
-Small and medium entrepreneurs often choose locations and ideas from gut feeling or informal advice. Professional GIS / consultancy tools exist, but they are expensive, complex, and built for large enterprises — not first-time founders.
+Business Map is an AI-powered Android application that helps entrepreneurs select suitable locations to start their businesses. It addresses the common issue of business failure caused by poor, guess-based site selection. Professional GIS and consultancy tools exist, but they are expensive, complex, and built for large enterprises — not first-time founders. Generic AI chat tools can also invent place names and unrealistically low costs.
 
-**Business Map** closes that gap with a mobile-first advisor that combines real Places data, geospatial analysis, and Gemini AI into clear recommendations a non-technical user can act on.
+By analyzing the user’s budget, business type, and live competitor presence — grounded in real Google Places data, OpenStreetMap boundaries, and Gemini AI — the application recommends commercial locations with clearer potential for success. Visualization features let users view a 3D model of their business (such as a salon or café) at the recommended location on the map, and place that model in real-world surroundings using Augmented Reality (AR). This makes advanced location and market analysis more accessible, reduces financial risk, and supports better decision-making for new businesses.
 
 ---
 
@@ -31,7 +31,7 @@ Small and medium entrepreneurs often choose locations and ideas from gut feeling
 | **Competitor analysis** | Nearby competitors, density/ratings context, and strategic insights |
 | **Budget estimation** | Startup cost breakdown (rent, setup, ops-style categories) vs the user’s budget |
 | **Business idea generation** | Niche ideas matched to area + budget, with USP, services, audience, challenges, and tips |
-| **AR preview** | 3D `.glb` business models overlaid on a map / Scene Viewer at the suggested site |
+| **AR preview** | Two modes: (1) 3D `.glb` model pinned at the recommended site’s real map coordinates; (2) place exterior/interior layouts in the physical world via Google Scene Viewer (ARCore) |
 | **Urdu TTS** | Translate analysis text and read it aloud for accessibility |
 | **Accounts & saved items** | Email/Google auth, profile, and save favorite locations/ideas |
 
@@ -66,7 +66,7 @@ for profiles and saved items.
 
 | Layer | Technologies |
 |---|---|
-| **Mobile** | Flutter, Provider, GetIt, Dio, Google Maps, WebView AR |
+| **Mobile** | Flutter, Provider, GetIt, Dio, Google Maps, WebView AR (map-pinned 3D), Google Scene Viewer / ARCore |
 | **Backend** | Python, FastAPI, Uvicorn, Pydantic, pytest |
 | **AI** | Google Gemini (`google-genai`) |
 | **Maps / geo** | Google Places, Maps Static, Street View · OSM Nominatim/Overpass · Shapely |
