@@ -10,6 +10,7 @@
 |---|---|
 | **Team** | Nafeesa Yousaf · Eman Tariq · Nayab Hameed |
 | **Platform** | Android (Flutter) + FastAPI backend |
+| **Stack** | Flutter · FastAPI · Gemini · Google Places/Maps · Firebase |
 | **Focus** | SMEs / early-stage founders |
 
 ---
@@ -36,9 +37,9 @@ Small and medium entrepreneurs often choose locations and ideas from gut feeling
 
 ---
 
-## How location AI works (high level)
+## How location AI works
 
-A two-phase pipeline keeps recommendations **grounded in real places**:
+A two-phase pipeline keeps recommendations **grounded in real places** (LLMs alone invent plausible but false site names):
 
 1. **Macro scouting** — resolve the target area (OpenStreetMap), split into a 3×3 grid, scan competitors with Google Places, send grid stats + a Static Map snapshot to **Gemini**, pick 3 strategic zones.
 2. **Micro site selection** — scout real commercial anchors in each zone, run a second Gemini pass for final sites, attach SWOT, budget breakdown, proxied imagery, and AR model URLs.
@@ -74,12 +75,64 @@ for profiles and saved items.
 
 ---
 
+## Engineering highlights
+
+- **Grounded AI** — Gemini output constrained by JSON schemas and filtered against live Places results
+- **Streaming UX** — SSE progress for multi-minute AI + Places pipelines
+- **Key hygiene** — Google photo/Street View served via short-lived **HMAC-signed** proxy URLs (server Maps key stays off the client)
+- **Auth** — Firebase ID tokens verified with revocation checks on protected `/v1` routes
+- **Abuse controls** — per-IP rate limits, body size caps, correlation IDs on errors
+- **Catalog-driven** — cities, divisions/areas, business types, and budgets loaded from versioned JSON (extensible without changing the AI pipeline)
+
+---
+
+## Academic framing
+
+### Research problem
+
+Site selection for SMEs is a **decision-support** problem under incomplete information: founders lack affordable access to competitor density, catchment structure, and location fit. Pure LLM chatbots fail here because they can invent place names and costs. Pure GIS tools fail the usability and cost constraints of first-time founders.
+
+### Approach — why this design
+
+| Question | Design choice | Rationale |
+|---|---|---|
+| **Why not one Gemini call?** | Two-phase macro → micro pipeline | Separates *where to look* (grid-level strategy) from *which building* (Places-grounded selection); reduces hallucination surface and keeps prompts smaller and more focused |
+| **Why grid + Places before the LLM?** | Deterministic geo scan, then AI ranking | Facts (counts, ratings, anchors) come from APIs; Gemini reasons over observed structure instead of recalling geography from training data |
+| **Why JSON schemas?** | Structured outputs for both phases | Makes results machine-consumable by Flutter, enables validation, and rejects malformed model responses early |
+| **Why SSE?** | Stream progress for multi-minute jobs | Location analysis is I/O-heavy (many Places calls + 2 model passes); streaming keeps the client responsive without fake “instant” UX |
+| **Why HMAC media proxy + Firebase auth?** | Server-held Maps key; verified callers | Limits key leakage and unpaid abuse — required when an LLM pipeline sits behind a public mobile client |
+| **Why rate limits on AI routes?** | Tighter caps on suggestion endpoints | Gemini + Places calls dominate latency and vendor cost; throttling is capacity and cost control, not only security |
+
+### System contribution
+
+Business Map demonstrates an **end-to-end applied AI system**: mobile client, authenticated API, multi-step LLM workflow, live geospatial retrieval, and operational controls (auth, signing, rate limits). The contribution is integration and grounding discipline — not a new learning algorithm.
+
+### Limitations
+
+- **City catalog (current):** shipped and tested for **Islamabad**. Area lists are a lengthy curated dataset (names, coordinates, OSM place identifiers for reliable boundary lookup, and Places behavior). The pipeline is city-agnostic — expand coverage by adding a city, its divisions/areas with coordinates and correct **OSM place codes**, then testing geocoding and recommendations for that market
+- Client: **Android-first**
+- Budget figures are **model-assisted estimates**, not live listings or audited financials
+- Quality depends on Google / Gemini / OSM availability, quotas, and data freshness
+- No formal offline evaluation suite yet (e.g. systematic Place-ID match rates across sectors)
+
+### Future trajectory
+
+This project is a foundation for further work in cloud-hosted AI services, measurable LLM pipelines, and cost-aware operation — without claiming production MLOps or large-scale distributed systems today.
+
+Planned next steps:
+
+1. Containerize and deploy the API to a cloud host
+2. Persist per-request latency and vendor call counts (Gemini / Places) for cost and performance analysis
+3. Add a lightweight grounding check (recommended sites must resolve to real Place IDs) as a first evaluation signal
+
+---
+
 ## Repository structure
 
 ```text
 ├── Business-Map-Backend/       # FastAPI AI + Places + OSM API
 ├── Business-Map-Flutter-App/   # Flutter Android client + Firebase
-├── docs/                      # FYP report
+├── docs/                      # FYP report · social preview
 └── README.md
 ```
 
@@ -125,30 +178,9 @@ BACKEND_BASE_URL=http://10.0.2.2:8000/v1/
 
 ---
 
-## Engineering highlights (for reviewers)
-
-- **Grounded AI** — Gemini output constrained by JSON schemas and filtered against live Places results
-- **Streaming UX** — SSE progress for multi-minute AI + Places pipelines
-- **Key hygiene** — Google photo/Street View served via short-lived **HMAC-signed** proxy URLs (server Maps key stays off the client)
-- **Auth** — Firebase ID tokens verified with revocation checks on protected `/v1` routes
-- **Abuse controls** — per-IP rate limits, body size caps, correlation IDs on errors
-- **Catalog-driven** — cities, sectors, business types, and budgets loaded from versioned JSON (Islamabad sectors + multiple business categories)
-
----
-
-## Scope & limitations
-
-- Geographic focus: **Islamabad** (extensible via catalog JSON)
-- Client: **Android-first** (iOS Firebase options not wired yet)
-- Cost figures are **AI-assisted estimates**, not live property listings
-- Depends on Google / Gemini / OSM availability and quotas
-
----
-
-## Future work
+## Product next steps
 
 - iOS build
-- Broader city / market coverage
+- Expand the city catalog (add city + divisions/areas + OSM place codes, then validate)
 - Stronger feedback loop from real outcomes
 - Richer AR asset library and interactivity
-- Legal / registration guidance for new businesses
